@@ -8,7 +8,7 @@
  *
  */
 
-//namespace seclibphp;
+//namespace securityreviewphp;
 
 // Handle XSS checks
 class Xss {
