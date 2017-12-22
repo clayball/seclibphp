@@ -1,13 +1,18 @@
 <?php
 
-// includes
+/**
+ * secreview.php is a command-line only tools used for identifying potentially
+ * vulnerable code.
+ *
+ */
+
+
 include("lib/secreview.php");
 //include ("lib/xss.php");
 //include ("lib/sqli.php");
 
 /**
- * NOTES (will be removed eventually)
- * [still developing]
+ * [NOTES] (will be removed eventually) ..still developing..
  *
  * instantiate our classes and make sure things are good to go.
  *
@@ -39,10 +44,11 @@ include("lib/secreview.php");
  *
  */
 
-
 // These may be included by a request or process_checks class
 //$check_xss = new Xss();
 //$check_sqli = new Sqli();
+
 $secrev = new SecurityReviewPHP();
+
 
 ?>
