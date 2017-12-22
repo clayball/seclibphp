@@ -1,6 +1,6 @@
 <?php
 
-/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+namespace secrevphp;
 
 /**
  * To start with: this class should run against all input forms and return
@@ -8,12 +8,11 @@
  *
  */
 
-//namespace securityreviewphp;
+include_once ("lib/secreview.php");
 
 // Handle XSS checks
-class Xss {
+class Xss extends SecurityReviewPHP {
 
-    // Properties
     protected $xss_results = ["func_name" => "pass|fail"];
     
     // Constructor

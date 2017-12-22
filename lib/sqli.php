@@ -1,6 +1,6 @@
 <?php
 
-/* vim: set expandtab tabstop=4 shiftwidth=4 softtabstop=4: */
+namespace secrevphp;
 
 /**
  * To start with: this class should run against all input forms and return
@@ -8,7 +8,6 @@
  *
  */
 
-//namespace seclibphp;
 
 // Handle SQLi checks
 class Sqli {

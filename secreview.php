@@ -6,9 +6,8 @@
  *
  */
 
-
-include("lib/secreview.php");
-//include ("lib/xss.php");
+//include("lib/secreview.php");
+include ("lib/xss.php");
 //include ("lib/sqli.php");
 
 /**
@@ -48,7 +47,21 @@ include("lib/secreview.php");
 //$check_xss = new Xss();
 //$check_sqli = new Sqli();
 
-$secrev = new SecurityReviewPHP();
+$secrev = new secrevphp\Xss();
+
+/**
+ * TESTING [begin]
+ * code in this section is to be used purely for testing purposes
+ *
+ */
+
+$secrev->identify_inputs();
+
+/**
+ * TESTING [end]
+ */
+
+
 
 
 ?>
