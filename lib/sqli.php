@@ -8,11 +8,11 @@ namespace secrevphp;
  *
  */
 
+include_once ("lib/secreview.php");
 
 // Handle SQLi checks
 class Sqli {
 
-    // Properties
     protected $sqli_results = ["func_name" => "pass|fail"];
     
     // Constructor

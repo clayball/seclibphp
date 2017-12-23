@@ -43,9 +43,8 @@ include ("lib/xss.php");
  *
  */
 
-// These may be included by a request or process_checks class
-//$check_xss = new Xss();
-//$check_sqli = new Sqli();
+$codebase = $argv[1];
+echo "[*] Performing security review on codebase: " . $codebase . "\n";
 
 $secrev = new secrevphp\Xss();
 
